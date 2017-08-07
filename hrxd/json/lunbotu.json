@@ -1,0 +1,62 @@
+{
+  "lbt":[
+					{
+						"img": "img/img/lbt1.png"
+					}, {
+						"img": "img/img/lbt2.png"
+					}, {
+						"img": "img/img/lbt3.png"
+					}, {
+						"img": "img/img/lbt4.png"
+					}, {
+						"img": "img/img/lunbotu1.png"
+					}, {
+						"img": "img/img/lunbotu2.png"
+					}, {
+						"img": "img/img/lunbotu3.png"
+					}, {
+						"img": "img/img/lunbotu4.png"
+					}, {
+						"img": "img/img/lunbotu5.png"
+					}, {
+						"img": "img/img/lunbotu6.png"
+					}
+	      ],
+   "zp":[
+	        {
+						"img": "img/img/zs1.png"
+					}, {
+						"img": "img/img/zs2.png"
+					}, {
+						"img": "img/img/zs3.png"
+					}, {
+						"img": "img/img/zs4.png"
+					}
+	    ],
+   "xp":[
+	        {
+						"img": "img/xp/xp1.png"
+					}, {
+						"img": "img/xp/xp2.png"
+					}, {
+						"img": "img/xp/xp3.png"
+					}, {
+						"img": "img/xp/xp4.png"
+					}, {
+						"img": "img/xp/xp5.png"
+					}
+	    ],
+   "dz":[
+	        {
+						"img": "img/dz/我要定制1.png"
+					}, {
+						"img": "img/dz/我要定制2.png"
+					}, {
+						"img": "img/dz/我要定制3.png"
+					}, {
+						"img": "img/dz/我要定制4.png"
+					}, {
+						"img": "img/dz/我要定制5.png"
+					}
+	    ]        
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.3.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/zc.css" />
+		<script src="js/zc.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div id="header_top">
+				<a href="index.html">
+					<p></p>
+				</a>
+				<span>
+				      <img src="img/img2/slogan.png"/>
+				</span>
+				<a href="dl.html" class="zc_dl">已有海尔商城账号登录 ></a>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="nav">
+		<div id="nav_box">
+			<h2 class="nav_h2">欢迎注册海尔商城</h2>
+			<div class="nav_div">
+				<form >
+				<div class="div_span input_pt">
+						<label for="checked"><input type="radio" value="pt" name="ck" id="checked" class="checked" checked="checked" />
+						普通用户注册</label>
+					</div>
+				<div class="div_span input_vip">
+						<label for="checked_1"><input type="radio" value="ck" name="ck" class="checked_1" id="checked_1" />
+						顺逛微店主注册</label>
+					</div>
+				</form>
+			</div>
+			<div class="div_nav_box">
+				<div class="clear_div">
+					<h6>什么是顺逛微店主？</h6>
+					<p>
+						顺逛是海尔集团旗下官方微店平台。旨在精选各行业优质品牌及商家资源，甄选精品和爆品，为微店主搭建专属的“0成本创业平台”，提供自主创业良机，实现微店主、品牌商、平台多方共创共赢。
+					</p>
+				</div>
+				<div class="clear_div">
+					<h6>顺逛微店主有哪些特权？</h6>
+					<ul>
+						<li> 创业0风险</li>
+						<li> 产品保障</li>
+						<li> 物流保障（免运费、按约送达、免费安装、体验满意后再付款、15天无理由退货）</li>
+						<li> 售后保障</li>
+						<li> 专业免费培训</li>
+						<li> 品牌授权</li>
+					</ul>
+				</div>
+				<span style="margin-left:140px;font-size: 12px;"><a href="#">查看更多>></a></span>
+			</div>
+			<div class="zc_box" >
+				<div id="yx_a1" >
+						<td class="td_a1">邮箱</td>&nbsp;&nbsp;&nbsp;&nbsp;
+						<td><input type="text" placeholder="请输入邮箱" id="yx_input" /></td>
+						<td><span id="yx_input_1"></span></td>
+				</div>
+				<br />
+				<div id="sj_a1" style="display: none;">
+						<td class="td_a1">手机号码</td>&nbsp;&nbsp;
+						<td><input type="text" placeholder="请输入手机号码" /></td>
+						<td>请输入手机号码</td>
+				</div>
+				<span id="span_a_sj" style="cursor: pointer;">用手机号码注册</span>
+				<span id="span_a_sj_1" style="cursor: pointer;display: none;">用电子邮箱注册</span>
+				<br />
+				<tr>
+					<td class="td_a1">登录密码</td>&nbsp;&nbsp;
+					<td><input type="password" placeholder="6-16位密码,字母、数字、英文字符至少包含2种" id="mm_ipnut" /></td>
+					<td><span id="mm_input_1"></span></td>
+				</tr><br />
+				<tr>
+					<td class="td_a1">确认密码</td>&nbsp;&nbsp;
+					<td><input type="password" placeholder="请再次输入登录密码" id="yzmm_input" /></td>
+					<td><span id="yzmm_input_1"></span></td>
+				</tr><br />
+				<tr>
+					<td class="td_a1">验证码</td>&nbsp;&nbsp;&nbsp;
+					<td>
+						<input type="text" placeholder="请输入验证码" id="yzm_input" />
+						<input type="button" value="8888" id="sjsz_input" style="width: 80px;position: absolute;left:425px;padding:15px 0px;line-height: 5px;" />
+					</td>
+					<td><span id="yzm_input_1"></span></td>
+				</tr><br />
+
+				<div id="sj_a2" style="display: none;">
+					<tr>
+						<td class="td_a1">手机验证码</td>&nbsp;
+						<td>
+							<input type="text" placeholder="请输入手机验证码" />
+							<input type="button" value="发送验证码" style="width: 80px;position: absolute;left:425px;padding:15px 0px;line-height: 5px;background: #25bdff;color: #fff;" />
+						</td>
+						<td>请输入手机验证码</td>
+					</tr>
+				</div>
+				<br />
+				<tr>
+					<td></td>
+					<td><input type="checkbox" checked="checked" style="width:12px;margin-left: 91px;vertical-align:middle;" /></td>
+					<td>
+						<a href="" style="color: #005AAA">同步开通海尔快捷通账号</a>
+					</td><br />
+					<td>
+						<a href="" style="color: #005AAA;margin-left: 91px;">《海尔商城用户服务协议》</a>
+					</td>
+				</tr><br />
+				<tr>
+					<td><input type="button" value="同意以上协议，马上注册" class="input_a1" id="zc_input" /></td>
+				</tr>
+			</div>
+			<div class="sj_zc_box" style="position: relative;display: none;">
+				<div class="sj_zc_box_1">
+					<ul>
+						<li class="ul_li_sj">
+							<div class="div_input">
+								<span class="span_a1">手机号码</span>
+							    <input type="text" placeholder="建议填写常用手机号"/>
+							</div>
+							<p class="div_p_1">手机号码不能为空</p>
+						</li>
+						<li class="ul_li_sj">
+							<div class="div_input">
+								<span class="span_a1">验证码</span>
+							    <input type="text" placeholder="输入正确验证码"style="position: relative;"/>
+							    <input type="button" value="8888" style="position: absolute;left:427px;width: 80px;cursor: pointer;font-size: 14px;"/>
+							</div>
+							<p class="div_p_1">验证码不能为空</p>
+						</li>
+						<li class="ul_li_sj">
+							<div class="div_input">
+								<span class="span_a1">手机验证码</span> 
+							    <input type="text" placeholder="手机验证码不能为空" style="position: relative;"/>
+							    <input type="button" value="发送验证码" style="position: absolute;left:427px;width: 80px;color: #fff;font-size: 12px;background: #25bdff;cursor: pointer;"/>
+							</div>
+							<p class="div_p_1">手机验证码不能为空</p>
+						</li>
+						
+						<li class="li_span_text">
+							<span class="span_text">成为顺逛微店主请补全以下个人信息</span>
+						</li>
+						
+						<li class="ul_li_sj">
+							<div class="div_input">
+								<span class="span_a1">设置密码</span>
+							    <input type="password" placeholder="6-16位密码,字母、数字、英文字符至少包含2种"/>
+							</div>
+							<p class="div_p_1">密码不能为空</p>
+						</li>
+						<li class="ul_li_sj">
+							<div class="div_input">
+								<span class="span_a1">确认密码</span>
+							    <input type="password" placeholder="请输入确认密码"/>
+							</div>
+							<p class="div_p_1">确认密码不能为空</p>
+						</li>
+						<li class="ul_li_sj">
+							<div class="div_input">
+								<span class="span_a1">输入姓名</span>
+							    <input type="text" placeholder="请输入姓名"/>
+							</div>
+							<p class="div_p_1">姓名不能为空</p>
+						</li>
+						<li class="ul_li_sj">
+							<div class="div_input">
+								<span class="span_a1">选择地址</span>
+								<div class="select">
+									 <select name="">
+								    	<option value="">北京</option>
+								    	<option value="">天津</option>
+								    	<option value="">上海</option>
+								    	<option value="">广东</option>
+								    	<option value="">浙江</option>
+								    	<option value="">江苏</option>
+								    	<option value="">山东</option>
+								    	<option value="">广西</option>
+								    	<option value="">云南</option>
+								    	<option value="">贵州</option>
+								    	<option value="">四川</option>
+								    	<option value="">重庆</option>
+								    	<option value="">湖北</option>
+								    	<option value="">湖南</option>
+								    	<option value="">江西</option>
+								    	<option value="">安徽</option>
+								    	<option value="">河南</option>
+								    	<option value="">河北</option>
+								    	<option value="">山西</option>
+								    	<option value="">陕西</option>
+								    	<option value="">宁夏</option>
+								    	<option value="">甘肃</option>
+								    	<option value="">青海</option>
+								    	<option value="">黑龙</option>
+								    	<option value="">吉林</option>
+								    	<option value="">辽宁</option>
+								    	<option value="">内蒙</option>
+								    	<option value="">新疆</option>
+								    	<option value="">西藏</option>
+								    	<option value="">海南</option>
+								    	<option value="">台湾</option>
+								    </select>
+								    <select name="">
+								    	<option value="">北京</option>
+								    	<option value="">你猜</option>
+								    	<option value="">你猜</option>
+								    </select>
+								    <select name="">
+								    	<option value="">朝阳</option>
+								    	<option value="">你猜</option>
+								    	<option value="">你猜</option>
+								    </select>
+								</div>
+							</div>
+						</li>
+						<li class="ul_li_sj" style="height: 90px;">
+							<div class="div_input">
+								<span class="span_a1">输入姓名</span>
+							    <textarea placeholder="建议填写的详细地址，如街道名称、门牌号码、楼层、房间号等。" class="select_1"></textarea>
+							</div>							
+						</li>
+						<li class="ul_li_sj">
+							<div class="div_input">
+								<span class="span_a1">推荐码</span>
+							    <input type="text" placeholder="如有推荐码，请输入"/>
+							</div>
+						</li>
+						<li>
+							<input type="checkbox" checked="checked"/>
+							<span><a href="">我已阅读并同意《海尔商城用户注册协议》</a></span>
+						</li>
+						<li>
+							<input type="button" value="注册顺逛微店主" class="input_dl_zc" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--传说中的分界线-->
+				<div id="footer">
+			<div id="footer_footer">
+				<p class="p_1">
+					<a href="">购物流程</a>|
+					<a href="">配送方式</a>|
+					<a href="">付款方式</a>|
+					<a href="">售后服务</a>|
+					<a href="">投诉建议</a>|
+					<a href="">友情链接</a>|
+					<a href="">海尔知识堂</a>
+				</p>
+				<p class="p_2">网站备案/许可证号：
+					<a href="">鲁ICP备09096283号</a>
+				</p>
+				<p>Copyright©2000-2017 海尔集团电子商务有限公司 All Rights Reserved</p>
+				<p class="p_3">
+					<a href=""><img src="img/img/01.png" /></a>
+					<a href=""><img src="img/img/02.png" /></a>
+					<a href=""><img src="img/img/03.png" /></a>
+					<a href=""><img src="img/img/04.png" /></a>
+					<a href=""><img src="img/img/05.png" /></a>
+					<a href=""><img src="img/img/06.jpg" /></a>
+					<a href=""><img src="img/img/07.jpg" /></a>
+				</p>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="nav_right">
+			<span class="span_1 span_01">
+				<img src="img/img/ewm0917.png" class="img_span"/>
+			</span>
+			<a href="" class="a_1"></a>
+			<a href="" class="a_2"></a>
+			<!--<a href="" class="a_3">
+				<i class="iconfont">&#xe664;</i>
+			</a>-->
+		</div>
+		<!--传说中的分界线-->
+		<!--传说中的分界线-->
+
+	</body>
+
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>海尔兄弟</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+		<script type="text/javascript" src="js/ajax.js"></script>
+		<script type="text/javascript" src="js/move.js"></script>
+		<script type="text/javascript" src="js/lbt.js"></script>
+		<!--<script type="text/javascript" src="js/jptj.js"></script>-->
+		<!--<script type="text/javascript" src="js/lbt.js"></script>-->
+		
+	</head>
+	<body onselectstart="return false">
+		<div id="header_top">
+			<div id="header_top_a">
+				<div id="left">
+					<div class="a1">
+						<p>切换城市：</p>
+						<a href="#">&nbsp;中国</a>
+					</div>
+					<div class="a2">
+						<a href="#"></a>
+						<p>收藏海尔商城</p>
+					</div>
+					<div class="a3">
+						<a href="#"></a>
+						<p>微信</p>
+						<div class="a3_1">
+							<img src="img/img2/qrehaier.png"/>
+						</div>
+					</div>
+					<div class="a4">
+						<a href="#"></a>
+						<p>顺逛微店</p>
+						<div class="a4_1">
+							<img src="img/img2/qrehaier.png"/>
+						</div>
+					</div>
+				</div>
+				<div id="right">
+                    <ul>
+                    	<li>嗨，欢迎来到海尔官方商城 请<input type="button" value="登陆" /></li>
+                    	<li>|</li>
+                    	<li>
+                    		<a href="#">免费注册</a>&nbsp;
+                    		<a href="#">我的订单</a>                  		
+                    	</li>
+                    	<li>|</li>
+                    	<li>
+                    		<a href="#">帮助中心</a>                    		
+                    	</li>
+                    	<li>|</li>
+                    	<li>
+                    		<a href="#">企业采购</a>                    		
+                    	</li>
+                    	<li>|</li>
+                    	<li>
+                    		<a href="#">互动社区</a>                    		
+                    	</li>
+                    	<li>|</li>
+                    	<li>
+                    		<a href="#">海尔官网</a>                    		
+                    	</li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="header_center">
+			<div id="header_center_a">
+				<div class="logo">					
+					<a href="#" class="a1"><h1>海尔</h1></a>
+					<a href="#" class="a2"></a>
+				</div>
+				<div class="sousuo">
+					<input type="text" placeholder="【暑期家电大联播】"/>
+					<input type="button" />
+					<ul>
+						<li>热门搜索：</li>
+						<li><a href="#">月末促</a></li>
+						<li><a href="#">智能空调</a></li>
+						<li><a href="#">冰箱</a></li>
+						<li><a href="#">热水器</a></li>
+						<li><a href="#">智能彩电</a></li>
+						<li><a href="#">滚筒洗衣机</a></li>
+						<li><a href="#">冷柜</a></li>
+						<li><a href="#">厨电套餐</a></li>
+					</ul>
+				</div>
+				<div class="promise">
+					<a href="#" class="a_promise a1"><br /><br />货到付款</a>
+					<a href="#" class="a_promise a2"><br /><br />送装同步</a>
+					<a href="#" class="a_promise a3"><br /><br />全国联保</a>
+				</div>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="nav">
+			<div id="nav_a">
+				<div class="a1">
+					<span>商品分类</span>
+					<div class="spfl">
+						<ul>
+							<li><a href="http://www.baidu.com/">冰箱<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">空调<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">洗衣机<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">电视<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">热水器<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">厨房电器<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">冰柜<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">智能产品<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">生活小家电<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">厨房小家电<i class="iconfont">&#xe605;</i></a></li>
+							<li><a href="http://www.baidu.com/">母婴/家庭医疗<i class="iconfont">&#xe605;</i></a></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="list">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">有好货</a></li>
+					<li><a href="#">抢鲜购</a></li>
+					<li><a href="#">定制</a></li>
+					<li><a href="#">会员</a></li>
+					<li><a href="#">社区</a></li>
+					<li><a href="#">线下体验</a></li>
+				</ul>
+				<div class="gwc">
+					<a href="#">
+						<span>购物车</span>
+					</a>
+					<div class="gwl">
+						<p>您还没挑选商品哦，赶紧行动吧！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="banner">
+			<div id="banner_a">
+				<ul id="list">
+				
+				</ul>
+				<div id="left1"><i class="iconfont">&#xe623;</i></div>
+				<div id="right1"><i class="iconfont">&#xe605;</i></div>
+			</div>
+			<div id="banner_b">
+				<p id="list2">
+				
+				</p>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="banner_bottom">
+			<div id="banner_bottom_a">
+				<ul>
+					<li class="yd"><a href="http://www.baidu.com/"><img src="img/img/zs (1).png"/></a></li>
+					<li class="a1 yd"><a href="http://www.baidu.com/"><img src="img/img/zs (2).png"/></a></li>
+					<li class="a1 yd"><a href="http://www.baidu.com/"><img src="img/img/zs (3).png"/></a></li>
+					<li class="a1 yd"><a href="http://www.baidu.com/"><img src="img/img/zs (4).png"/></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="main">
+			<div id="main_a">
+				<h2>精品推荐</h2>
+				<div class="nav_a">
+					<dl class="dl_a1">
+						热卖商品
+					</dl>
+					<dl class="dl_a2 a01">
+						<dt><a href="#">冰箱冷柜</a></dt>
+						<dd>
+							<a href="#">单门</a>|<a href="#">两门</a>|<a href="#">三门</a>
+							<a href="#">多门</a>|<a href="#">对开</a>|<a href="#">冷柜</a>
+						</dd>
+					</dl>
+					<dl class="dl_a3 a01">
+						<dt><a href="http://www.baidu.com/">洗衣机</a></dt>
+						<dd>
+							<a href="http://www.baidu.com/">波轮</a>|<a href="http://www.baidu.com/">滚筒</a>
+							<a href="http://www.baidu.com/">mini</a>|<a href="http://www.baidu.com/">免清洗</a>
+						</dd>
+					</dl>
+					<dl class="dl_a4 a01">
+						<dt><a href="http://www.baidu.com/">电视</a></dt>
+						<dd>
+							<a href="http://www.baidu.com/">4K电视 </a>|<a href="http://www.baidu.com/">智能电视</a>
+							<a href="http://www.baidu.com/">普通电视</a>|<a href="http://www.baidu.com/">电视附件</a>
+						</dd>
+					</dl>
+					<dl class="dl_a5 a01">
+						<dt><a href="http://www.baidu.com/">空调</a></dt>
+						<dd>
+							<a href="http://www.baidu.com/">壁挂式空调</a>|<a href="http://www.baidu.com/">柜式空调</a>
+							<a href="http://www.baidu.com/">家用中央空调</a>|<a href="http://www.baidu.com/">空气净化</a>
+						</dd>
+					</dl>
+					<dl class="dl_a6 a01">
+						<dt><a href="http://www.baidu.com/">热水器</a></dt>
+						<dd>
+							<a href="http://www.baidu.com/">电热水器</a>|<a href="http://www.baidu.com/">小厨宝</a>
+							<a href="http://www.baidu.com/">燃气热水器</a>  
+						</dd>
+					</dl>
+					<dl class="dl_a7 a01">
+						<dt><a href="http://www.baidu.com/">厨房电器</a></dt>
+						<dd>
+							<a href="http://www.baidu.com/">烟灶套系</a>|<a href="http://www.baidu.com/">吸油烟机</a>|<a href="http://www.baidu.com/">燃气灶</a>|<a href="http://www.baidu.com/">消毒柜</a>|<a href="http://www.baidu.com/">洗碗机</a>|<a href="http://www.baidu.com/">净水器</a>
+						</dd> 
+					</dl>
+					<dl class="dl_a8 a01">
+						<dt><a href="http://www.baidu.com/">生活家电</a></dt>
+						<dd>
+							<a href="http://www.baidu.com/">生活小家电</a>|<a href="http://www.baidu.com/">厨房小家电</a>
+							<a href="http://www.baidu.com/">家庭医疗</a>|<a href="http://www.baidu.com/">数码</a>
+						</dd>
+					</dl>
+				</div>
+				<ul id="ajax_01" class="list_main list_a">
+					<!--<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品4.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">海尔滚筒洗衣机</span>
+								<em class="em_a">EG10014B39GU1</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券 活动时间7月25日0:00-7月26日24:00，活动价2699元！前100名下单立减100元，仅需2599元！晒图评价赠129元电磁炉！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券 活动时间7月25日0:00-7月26日24:00，活动价2699元！前100名下单立减100元，仅需2599元！晒图评价赠129元电磁炉！
+								</span>
+							</a>
+							<em class="em_b">￥2699</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品5.png"/></a>
+						<a href="#"  class="a_b">前100名下单减100元 晒图赠电磁炉</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品1.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品2.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品3.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品6.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品7.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品12.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品8.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品9.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品10.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>
+					<li class="ul_li_a">
+						<h4 class="h4_ul_li">
+							<a href="#" >
+								<span class="span_a">统帅无氟变频壁挂式空调</span>
+								<em class="em_a">KFR-35GW/10LBA23ATU1套机</em>
+								<span class="span_b" title="【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！">
+									【暑期家电大联播】①开售期每日四个整点下单抢129元插排②花呗6期免息③晒图评价送金券（空调品类不支持使用优惠券） 活动时间7月25日0:00-7月26日24:00，活动价2599元！晒图评论赠手持吸尘器！
+								</span>
+							</a>
+							<em class="em_b">￥2599</em>
+						</h4>
+						<a href="#" class="a_a"><img src="img/rmp/热卖品11.png"/></a>
+						<a href="#"  class="a_b">晒图评论赠手持吸尘器</a>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="main_center">
+			<div id="main_center_b">
+				<h2>新品首发</h2>
+				<ul>
+					<li class="ul_li"><a href="#"><img src="img/xp/新品1.png"/></a></li>
+					<li class="ul_li"><a href="#"><img src="img/xp/新品2.png"/></a></li>
+					<li class="ul_li"><a href="#"><img src="img/xp/新品3.png"/></a></li>
+					<li class="ul_li"><a href="#"><img src="img/xp/新品4.png"/></a></li>
+					<li class="ul_li"><a href="#"><img src="img/xp/新品5.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="main_right">
+			<div id="main_right_c">
+				<h2>我要定制</h2>
+				<ul>
+					<li class="ul_li"><a href="#"><img src="img/dz/我要定制1.png"/></a></li>
+					<li class="ul_li"><a href="#"><img src="img/dz/我要定制2.png"/></a></li>
+					<li class="ul_li"><a href="#"><img src="img/dz/我要定制3.png"/></a></li>
+					<li class="ul_li"><a href="#"><img src="img/dz/我要定制4.png"/></a></li>
+					<li class="ul_li"><a href="#"><img src="img/dz/我要定制5.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="main_nav">
+			<dl class="main_dl a1">
+				<dt><a href="http://www.baidu.com/">互动社区<span class="dl_span b1"></span></a></dt>
+				<dd class="dl_dd c1"><img src="img/img2/gobbs_04.png"/></dd>
+				<dd><a href="http://www.baidu.com/">· 晒单评测有好礼</a></dd>
+				<dd><a href="http://www.baidu.com/">· 参与活动中大奖</a></dd>
+				<dd><a href="http://www.baidu.com/">· 家电百科看过来</a></dd>
+			</dl>
+			<dl class="main_dl a2">
+				<dt><a href="#">知识堂<span class="dl_span b2"></span></a></dt>
+				<dd><a href="http://www.baidu.com/">· 海尔商城网上支付方式方法大全</a></dd>
+				<dd><a href="http://www.baidu.com/">· 海尔洗衣机怎么样   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	</a></dd>
+				<dd><a href="http://www.baidu.com/">· 空调制冷效果差怎么办？&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></dd>
+				<dd><a href="http://www.baidu.com/">· 滚筒洗衣机安装方法&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></dd>
+				<dd><a href="http://www.baidu.com/">· 【冰箱保养攻略】</a></dd>
+			</dl>
+			<dl class="main_dl a3">
+				<dt><a href="#">商城公告<span class="dl_span b3"></span></a></dt>
+				<dd><a href="http://www.baidu.com/">· 石家庄受暴雨影响订单延时送达公告</a></dd>
+				<dd><a href="http://www.baidu.com/">· “强者争霸——微店主大PK”中奖公示</a></dd>
+				<dd><a href="http://www.baidu.com/">· 海南省受第四号台风影响订单延时送达公告</a></dd>
+				<dd><a href="http://www.baidu.com/">· 昆明东川等地受暴雨山洪影响订单延时送达公告</a></dd>
+				<dd><a href="http://www.baidu.com/">· 湖南多地受暴雨山洪影响订单延时送达公告</a></dd>
+			</dl>
+		</div>
+		<!--传说中的分界线-->
+		<div id="footer_top">
+			<div class="footer_div">
+				<h3 class="div_h3">售后服务和保修政策</h3>
+				<p class="div_p">
+					<a href="http://www.baidu.com/" title="冰箱冰柜">冰箱冰柜</a>
+					|
+					<a href="http://www.baidu.com/" title="洗衣机">洗衣机</a>
+					|
+					<a href="http://www.baidu.com/" title="彩电">彩电</a>
+					|
+					<a href="http://www.baidu.com/" title="空调">空调</a>
+					|
+					<a href="http://www.baidu.com/" title="热水器">热水器</a>
+					|
+					<a href="http://www.baidu.com/" title="电脑">电脑</a>
+					|
+					<a href="http://www.baidu.com/" title="厨房电器">厨房电器</a>
+					|
+					<a href="http://www.baidu.com/" title="生活小家电">生活小家电</a>
+					|
+					<a href="http://www.baidu.com/" title="手机数码">手机数码</a>
+				</p>
+			</div>
+			<p class="footer_p a1"><a href="http://www.baidu.com/" class="p_a1">客服在线</a></p>
+			<p class="footer_p a2"><a href="http://www.baidu.com/" class="p_b1">微信在线</a></p>
+		</div>
+		<!--传说中的分界线-->
+		<div id="footer_nav">
+			<div id="footer_nav_a">
+				<dl class="footer_dl">
+					<dt class="dl_dt"><a href="http://www.baidu.com/">购物指南</a></dt>
+					<dd><a href="http://www.baidu.com/">注册登录</a></dd>
+					<dd><a href="http://www.baidu.com/">密码相关</a></dd>
+					<dd><a href="http://www.baidu.com/">购物流程</a></dd>
+					<dd><a href="http://www.baidu.com/">交易条款</a></dd>
+					<dd><a href="http://www.baidu.com/">品牌大全</a></dd>
+			    </dl>
+			    <dl class="footer_dl a1">
+					<dt class="dl_dt"><a href="http://www.baidu.com/">支付方式</a></dt>
+					<dd><a href="http://www.baidu.com/">货到付款</a></dd>
+					<dd><a href="http://www.baidu.com/">网银支付</a></dd>
+					<dd><a href="http://www.baidu.com/">发票说明</a></dd>
+					<dd><a href="http://www.baidu.com/">电子发票</a></dd>
+			    </dl>
+			     <dl class="footer_dl a1">
+					<dt class="dl_dt"><a href="http://www.baidu.com/">物流配送</a></dt>
+					<dd><a href="http://www.baidu.com/">日日顺配送</a></dd>
+					<dd><a href="http://www.baidu.com/">配送服务查询</a></dd>
+					<dd><a href="http://www.baidu.com/">全场免运费</a></dd>
+					<dd><a href="http://www.baidu.com/">送装同步</a></dd>
+					<dd><a href="http://www.baidu.com/">送货入户 违约赔付</a></dd>
+			    </dl>
+			     <dl class="footer_dl a1">
+					<dt class="dl_dt"><a href="http://www.baidu.com/">售后服务</a></dt>
+					<dd><a href="http://www.baidu.com/">售后服务政策</a></dd>
+					<dd><a href="http://www.baidu.com/">退换货说明</a></dd>
+					<dd><a href="http://www.baidu.com/">安装/维修</a></dd>
+					<dd><a href="http://www.baidu.com/">服务时效承诺</a></dd>
+					<dd><a href="http://www.baidu.com/">咨询投诉</a></dd>
+			    </dl>
+			     <dl class="footer_dl a1">
+					<dt class="dl_dt"><a href="http://www.baidu.com/">特色服务</a></dt>
+					<dd><a href="http://www.baidu.com/">价格保护</a></dd>
+					<dd><a href="http://www.baidu.com/">半日达</a></dd>
+			   </dl>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="footer_nav_z">
+			<ul>
+				<li class="ul_li a1">
+					<img src="img/img/promise-1.png"/>
+					<a href="http://www.baidu.com/">
+						<span>24小时限时达</span><br />
+						全国1300个县支持24小时内送货上门
+					</a>
+				</li>
+				<li class="ul_li a2">
+					<img src="img/img/promise-2.png"/>
+					<a href="http://www.baidu.com/">
+						<span>按约送达 超时免单</span><br />
+						全国1081个区县支持按约送达<br />超时免单
+					</a>
+				</li>
+				<li class="ul_li a3">
+					<img src="img/img/promise-3.png"/>
+					<a href="http://www.baidu.com/">
+						<span>7天包退换</span><br />
+						产品售出7日内可退换货
+					</a>
+				</li>
+				<li class="ul_li a4">
+					<img src="img/img/promise-4.png"/>
+					<a href="http://www.baidu.com/">
+						<span>货到付款</span><br />
+						全国2076个区县支持货到付款
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--传说中的分界线-->
+		<div id="footer">
+			<div id="footer_footer">
+				<p class="p_1">
+					<a href="">购物流程</a>|
+					<a href="">配送方式</a>|
+					<a href="">付款方式</a>|
+					<a href="">售后服务</a>|
+					<a href="">投诉建议</a>|
+					<a href="">友情链接</a>|
+					<a href="">海尔知识堂</a>
+				</p>
+				<p class="p_2">网站备案/许可证号：
+					<a href="">鲁ICP备09096283号</a>
+				</p>
+				<p>Copyright©2000-2017 海尔集团电子商务有限公司 All Rights Reserved</p>
+				<p class="p_3">
+					<a href=""><img src="img/img/01.png"/></a>
+					<a href=""><img src="img/img/02.png"/></a>
+					<a href=""><img src="img/img/03.png"/></a>
+					<a href=""><img src="img/img/04.png"/></a>
+					<a href=""><img src="img/img/05.png"/></a>
+					<a href=""><img src="img/img/06.jpg"/></a>
+					<a href=""><img src="img/img/07.jpg"/></a>
+				</p>
+			</div>
+		</div>
+		<!--传说中的分界线-->
+		<div id="nav_right">
+			<span class="span_1 span_01">
+				<img src="img/img/ewm0917.png" class="img_span"/>
+			</span>
+			
+			<a href="" class="a_1"></a>
+			<a href="" class="a_2"></a>
+		</div>
+	</body>
+</html>

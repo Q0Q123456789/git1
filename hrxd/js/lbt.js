@@ -12,6 +12,7 @@ $(function() {
 		console.log(1)
 		$.cookie("usernema",$("#dl_zh").val(''),{expires:-1, path:"/"});
 		$.cookie("password",$("#dl_mm").val(''),{expires:-1, path:"/"});
+		location.reload();
 	})
 	
 	$(".gwc").mouseenter(function(){
@@ -197,13 +198,13 @@ $(function() {
 		//移入停止定时器
 		$("#banner_a").hover(function() {
 				clearInterval(timer);
-			}),
+		   },
 			function() {
 				timer = setInterval(function() {
 					i++;
 					move();
 				}, 3000);
-			}
+			})
 
 	}
 

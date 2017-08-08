@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
 		<script type="text/javascript" src="js/jquery.cookie.js"></script>
 		<script src="js/gwc.js"></script>
+		<script src="js/mini_gwc.js"></script>
 	</head>
 	<body>
 		<body onselectstart="return false">
@@ -68,7 +69,114 @@
 				</div>
 			</div>
 			<!--传说中的分界线-->
-			<div id="div_gwc">
+			<div id="header_center">
+				<div id="header_center_a">
+					<div class="logo">					
+						<a href="index.html" class="a1"><h1>海尔</h1></a>
+						<a href="#" class="a2"></a>
+					</div>
+					<div class="sousuo">
+						<input type="text" placeholder="【暑期家电大联播】"/>
+						<input type="button" />
+						<ul>
+							<li>热门搜索：</li>
+							<li><a href="#">月末促</a></li>
+							<li><a href="#">智能空调</a></li>
+							<li><a href="#">冰箱</a></li>
+							<li><a href="#">热水器</a></li>
+							<li><a href="#">智能彩电</a></li>
+							<li><a href="#">滚筒洗衣机</a></li>
+							<li><a href="#">冷柜</a></li>
+							<li><a href="#">厨电套餐</a></li>
+						</ul>
+					</div>
+					<div class="promise">
+						<a href="#" class="a_promise a1"><br /><br />货到付款</a>
+						<a href="#" class="a_promise a2"><br /><br />送装同步</a>
+						<a href="#" class="a_promise a3"><br /><br />全国联保</a>
+					</div>
+				</div>
+			</div>
+		<!--传说中的分界线-->
+			<div id="nav">
+				<div id="nav_a">
+					<div class="a1">
+						<span>商品分类</span>
+						<div class="spfl">
+							<ul>
+								<li><a href="http://www.baidu.com/">冰箱<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">空调<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">洗衣机<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">电视<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">热水器<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">厨房电器<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">冰柜<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">智能产品<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">生活小家电<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">厨房小家电<i class="iconfont">&#xe605;</i></a></li>
+								<li><a href="http://www.baidu.com/">母婴/家庭医疗<i class="iconfont">&#xe605;</i></a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="list">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">有好货<span class="span_span_a"></span></a></li>
+						<li><a href="#">抢鲜购<span class="span_span_a"></span></a></li>
+						<li><a href="#">定制</a></li>
+						<li><a href="#">会员<span class="span_span_a"></span></a></li>
+						<li><a href="#">社区</a></li>
+						<li><a href="#">线下体验</a></li>
+					</ul>
+					<div class="gwc">
+						<a href="gwc.html" id="a">
+							<span>购物车</span>
+						</a>
+						<div id="div_mini_div" style="display:none;z-index: 1;">
+							<div id="div_mini" style="display: none;">
+								<ul class="x_ul_gwc" id="x_ul_gwc">
+								  <div id="x_ul_gwc1"></div>
+	<!--
+									<li class="li_mini_gwc1">
+										<a href="#" class="mini_a1">
+											<img src=""/>
+										</a>
+										<a href="#" class="mini_a2">无氟变频壁挂式空调</a>
+										<span class="mini_span1">￥<em class="mini_em1">4399</em>x <em class="mini_em2">1</em></span>
+										<span class="mini_span2">删除</span>
+									</li>
+	-->
+									
+									<li class="li_mini_gwc2">
+										<p class="mini_p1">								
+											<span class="s_mini_span">共<em class="s_em s_em1"></em>件商品</span>
+											<span class="s_mini_span">合计：￥<em class="s_em s_em2"></em></span>
+										</p>
+										<p class="mini_p1">
+											<a href="#" id="mini_js" class="mini_js">去结算</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="gwl" id="mini_gwl" style="z-index: 1;">
+								<p >您还没挑选商品哦，赶紧行动吧！</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--传说中的分界线-->
+			<div id="gwc_msp">
+				<div id="gwc_msp_div">
+					<div class="div_msp">
+						<p class="div_msp_p">购物车还是空的，现在开始行动吧！</p>
+						<p>1、马上去 <a href="index.html">首页</a> 查看最新推荐商品；</p>
+						<p>2、去活动页看看：<a href="#">808冰箱-创客</a> <a href="#">808洗衣机-创客</a> <a href="#">808空调-创客</a> <a href="#">808彩电—创客</a></p>
+						<p>3、您可以尝试从 <a href="#">最近浏览的</a> 找回心仪的商品。</p>
+					</div>
+				</div>
+			</div>
+			<!--传说中的分界线-->
+			<div id="div_gwc" style="display: none;">
 				<div id="gwc_logo">
 					<div class="div_logo">
 						<div class="logo">
@@ -145,7 +253,7 @@
 							<span class="div_z3">清除无效商品</span>
 						</div>
 						<div class="balance_2">
-							<a href="#" class="js_1">0</a> 件 订单总计：
+							<a href="#" class="js_1">0</a> 件 订单总计： 
 							<a href="#" class="js_1" id="zzjg"> ¥ 0</a>
 							<a href="#" class="js" id="js">立即结算</a>
 						</div>

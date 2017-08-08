@@ -6,9 +6,7 @@ $(function(){
 	function fn(){
 		var arr=$.cookie("cart")
 		if(arr){
-			
-			
-			
+
 			//解析
 			arr = JSON.parse(arr);
 			//先清空旧节点
@@ -20,6 +18,7 @@ $(function(){
 							//显示小购物车
 					$("#div_mini").css("display","block")
 					$("#mini_gwl").css("display","none")
+					
 					
 					var total = 0;
 					var atotal = 0;
@@ -37,14 +36,14 @@ $(function(){
 						$("<span class='mini_span2'>删除</span>").appendTo(li)
 						
 						total +=obj.em3 * obj.num
-						atotal +=obj.num
+						atotal += parseInt(obj.num) 
 					}
 					$(".s_em1").html(atotal)
 					$(".s_em2").html(total)
 				}
 				else{
 					$("#div_mini").css("display","none")
-					$("#mini_gwl").css("display","block")
+					$("#mini_gwl").css("display","block")					
 		        }	
 	        
 		}

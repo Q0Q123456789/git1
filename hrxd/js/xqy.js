@@ -15,6 +15,7 @@ $(function(){
 		console.log(1)
 		$.cookie("usernema",$("#dl_zh").val(''),{expires:-1, path:"/"});
 		$.cookie("password",$("#dl_mm").val(''),{expires:-1, path:"/"});
+		location.reload();
 	})
 	 
 	 //小购物车
@@ -175,6 +176,7 @@ $(function(){
 			console.log(1)
 			sl++;
 			$(".txt_p").val(sl)
+           
 		})
 		$("#sub").click(function(){
 			sl--;
@@ -204,7 +206,7 @@ $(function(){
 
 			   	if(obj.id == pid){
 			   		var arrt = arr[i]
-  
+
 			   	}	
 			}
 
@@ -221,10 +223,10 @@ $(function(){
 					
 				}
 			}
-			if(!isExist){
+			if(isExist==false){
 				
 				arrt.num =sl;
-				obj.checked = true;//默认选中
+				arrt.checked = true;//默认选中
 			    goodsArr.push(arrt)
 //			    console.log(1)
 			}
@@ -233,7 +235,7 @@ $(function(){
 			$.cookie("cart", JSON.stringify(goodsArr), {expires:30, path:"/"});
 			console.log( $.cookie("cart") );
 			
-			//确认弹窗
+			//确认弹窗 
 		    $("#tc").css("display","block")
 		    $("#hp").css("display","block")
 
@@ -254,74 +256,58 @@ $(function(){
 			$("#hp").css("display","none")
 			location.href = "gwc.html"
 		})
-	})
-	
-	
-	
-	//添加商品数量
-		 var sl = $(".txt_p").val()
-		$("#add").click(function(){
-			console.log(1)
-			sl++;
-			$(".txt_p").val(sl)
-		})
-		$("#sub").click(function(){
-			sl--;
-			if(sl<1){
-    	       sl = 1;
-            }
-			$(".txt_p").val(sl)
-		})
-	
-	$("#ljgm").click(function(){
 		
-			for(var i=0;i<arr.length;i++){
-			   	var obj = arr[i];
-			   	
-			   	//删除多余数据减小cookie内存
-			   	delete arr[i].span2
-			   	delete arr[i].a
-			   	delete arr[i].em1
-			   	delete arr[i].em2
-			   	delete arr[i].span1
-			   	delete arr[i].name1
-			   	delete arr[i].name2
-			   	delete arr[i].jiage
-			   	delete arr[i].sl
-
-			   	if(obj.id == pid){
-			   		var arrt = arr[i]
-  
-			   	}	
-			}
-
-//			console.log(arrt.length)
-			var goodsArr =$.cookie("cart") ? JSON.parse($.cookie("cart")) : [];
-			var isExist = false;
-			//console.log(goodsArr[i])
-			for(var j=0;j<goodsArr.length;j++){
-				
-				if(goodsArr[j].id == arrt.id){
-					
-					goodsArr[j].num++;
-					isExist  = true;
-					
+		$("#ljgm").click(function(){
+		    
+				for(var i=0;i<arr.length;i++){
+				   	var obj = arr[i];
+				   	
+				   	//删除多余数据减小cookie内存
+				   	delete arr[i].span2
+				   	delete arr[i].a
+				   	delete arr[i].em1
+				   	delete arr[i].em2
+				   	delete arr[i].span1
+				   	delete arr[i].name1
+				   	delete arr[i].name2
+				   	delete arr[i].jiage
+				   	delete arr[i].sl
+	
+				   	if(obj.id == pid){
+				   		var arrt = arr[i]
+	
+				   	}	
 				}
-			}
-			if(!isExist){
+	
+	//			console.log(arrt.length)
+				var goodsArr =$.cookie("cart") ? JSON.parse($.cookie("cart")) : [];
+				var isExist = false;
+				//console.log(goodsArr[i])
+				for(var j=0;j<goodsArr.length;j++){
+					
+					if(goodsArr[j].id == arrt.id){
+						
+						goodsArr[j].num++;
+						isExist  = true;
+						
+					}
+				}
+				if(!isExist){
+					
+					arrt.num = sl;
+					arrt.checked = true;//默认选中
+				    goodsArr.push(arrt)
+	//			    console.log(1)
+				}
+	//      	console.log(goodsArr)
+	//      	console.log(goodsArr.length)
+				$.cookie("cart", JSON.stringify(goodsArr), {expires:30, path:"/"});
+				console.log( $.cookie("cart") );
 				
-				arrt.num = sl;
-				obj.checked = true;//默认选中
-			    goodsArr.push(arrt)
-//			    console.log(1)
-			}
-//      	console.log(goodsArr)
-//      	console.log(goodsArr.length)
-			$.cookie("cart", JSON.stringify(goodsArr), {expires:30, path:"/"});
-			console.log( $.cookie("cart") );
-			
-			//跳转购物车
-			location.href = "gwc.html"
+				//跳转购物车
+				location.href = "gwc.html"
+		})
+
 	})
 
 })

@@ -148,6 +148,404 @@ html,body{
 #right a:hover {
 	color: #005aaa;
 }
+
+
+/***************这是水平分割线*****************/
+
+#header_center {
+	width: 100%;
+	height: 82px;
+	background: #fff;
+}
+
+#header_center_a {
+	width: 1192px;
+	height: 82px;
+	background: #fff;
+	margin: 0 auto;
+}
+
+#header_center_a .logo {
+	width: 260px;
+	height: 82px;
+	float: left;
+}
+
+#header_center_a .logo h1 {
+	margin-left: -1000000px;
+}
+
+.logo .a1 {
+	display: block;
+	width: 137px;
+	height: 47px;
+	background: url(../img/img2/base.png) 0px 0px;
+	margin-top: 22px;
+	float: left;
+}
+
+.logo .a2 {
+	display: block;
+	width: 82px;
+	height: 38px;
+	background: url(../img/img2/slogan.png) -13px -13px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 15px;
+}
+
+#header_center_a .sousuo {
+	width: 500px;
+	height: 82px;
+	float: left;
+	margin-left: 80px;
+}
+
+#header_center_a .sousuo input:nth-child(1) {
+	width: 450px;
+	height: 25px;
+	margin-top: 15px;
+	float: left;
+}
+
+#header_center_a .sousuo input:nth-child(2) {
+	width: 35px;
+	height: 31px;
+	background: url(../img/img2/base.png) 0 -1100px;
+	border: 0;
+	float: left;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+#header_center_a .sousuo ul li {
+	float: left;
+	margin-right: 5px;
+	font-size: 12px;
+	font-weight: 900;
+	margin-top: 5px;
+}
+
+#header_center_a .sousuo ul li a {
+	color: #606060;
+}
+
+#header_center_a .sousuo ul li a:hover {
+	color: #005aaa;
+}
+
+#header_center_a .promise {
+	width: 255px;
+	height: 82px;
+	float: right;
+}
+
+#header_center_a .promise .a1 {
+	display: block;
+	width: 37px;
+	height: 37px;
+	background: url(../img/img2/base.png) center -240px;
+	float: left;
+}
+
+#header_center_a .promise .a2 {
+	display: block;
+	width: 37px;
+	height: 37px;
+	background: url(../img/img2/base.png) center -160px;
+	float: left;
+}
+
+#header_center_a .promise .a3 {
+	display: block;
+	width: 37px;
+	height: 37px;
+	background: url(../img/img2/base.png) center -1400px;
+	float: left;
+}
+
+#header_center_a .promise .a_promise {
+	margin-top: 12px;
+	font-size: 12px;
+	width: 50px;
+	text-align: center;
+	margin-left: 30px;
+	color: #005aaa;
+}
+
+
+/***************这是水平分割线*****************/
+
+#nav {
+	width: 100%;
+	height: 40px;
+	background: #333333;
+}
+
+#nav_a {
+	width: 1192px;
+	height: 40px;
+	background: #333;
+	margin: 0 auto;
+}
+
+#nav_a .a1 span {
+	display: block;
+	width: 192px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-weight: 900;
+	color: #fff;
+	background: #005aa9;
+	border-right: 2px solid #333333;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#nav_a .a1 {
+	float: left;
+}
+#nav_a .a1:hover .spfl{
+	display: block;
+}
+#nav_a .spfl {
+	width: 192px;
+	height: 425px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 13px 0;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+
+.spfl ul li {
+	width: 192px;
+	height: 36px;
+}
+
+.spfl ul li a {
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	line-height: 36px;
+	box-sizing: border-box;
+	padding-left: 12px;
+}
+
+.spfl ul li a i {
+	float: right;
+	font-size: 12px;
+	padding-right: 12px;
+	color: #ccc;
+}
+
+.spfl ul li a:hover {
+	background: #fff;
+	color: #000;
+}
+
+#nav_a .list {
+	float: left;
+}
+
+#nav_a .list li {
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	width: 89px;
+	border-right: 1px solid #555555;
+	position: relative;
+}
+
+#nav_a .list li a {
+	display: block;
+	color: #fff;
+	font-size: 16px;
+}
+
+#nav_a .list li a:hover {
+	background: #005aa9;
+}
+
+#nav_a .gwc {
+	width: 154px;
+	height: 40px;
+	float: right;
+	cursor: pointer;
+	position: relative;
+	background: #626262;
+}
+
+#nav_a .gwc #a {
+	display: block;
+	width: 154px;
+	height: 40px;
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	left: 18px;
+	top: 12px;
+	background: url(../img/img2/base.png) -1px -351px;
+}
+
+#nav_a .gwc #a span {
+	display: block;
+	margin-left: 22px;
+	line-height: 20px;
+	width: 55px;
+}
+
+#nav_a .gwl {
+	width: 340px;
+	height: 40px;
+	background: #fff;
+	position: absolute;
+	left: -186px;
+	bottom: -40px;
+	display: none;
+	z-index: 1;
+}
+
+#nav_a .gwl p {
+	text-align: center;
+	line-height: 40px;
+}
+
+#nav_a .gwc:hover #a {
+	
+	background: url(../img/img2/base.png) 0px -450px;
+	color: #005AA9;
+}
+
+#nav_a .span_span_a{
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 16px;
+	top: 5px;
+	left: 70px;
+	background: url(../img/img2/vip.gif)no-repeat;
+}
+/*****************************************/
+#div_mini{
+	/*display: none;*/
+    position: absolute;
+    width: 340px;
+    right: 0px;
+    top: 40px;
+    background: #f6f6f6;
+    box-shadow: 1px 1px 6px #ccc;
+    -webkit-box-shadow: 1px 1px 6px #ccc;
+    -moz-box-shadow: 1px 1px 6px #ccc;
+    z-index: 1;
+    font-family: "微软雅黑";
+}
+#div_mini .li_mini_gwc1{
+	background: #fff;
+	padding: 12px;
+	border-top: 1px solid #eee;
+	padding-bottom: 10px;
+	line-height: 1.5em;
+	overflow: hidden;
+}
+
+.li_mini_gwc1 img{
+ 	width: 62px;
+ 	height: 62px;
+ 	border: 1px solid #ddd;
+ }
+.li_mini_gwc1 .mini_a1{
+	float: left;
+}
+.li_mini_gwc1 .mini_a2{
+	float: left;
+	width: 155px;
+	height: 48px;
+	margin: 0 10px;
+	display: inline-block;
+}
+.li_mini_gwc1 .mini_span1{
+	width: 76px;
+	height: 24px;
+	float: right;
+    color: #005aa9;
+    text-align: right;
+}
+.mini_em1{
+	font-size: 14px;
+	font-weight:800;
+	padding: 0 2px;
+}
+.mini_em2{
+	color: #606060;
+}
+.mini_span2{
+	float: right;
+    color: #999;
+    text-align: right;
+}
+.li_mini_gwc2{
+	background: #f5f5f5;
+	overflow: hidden;
+    zoom: 1;
+    padding: 12px;
+    border-top: 1px solid #eee;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+}
+.li_mini_gwc2 .mini_p1{
+	line-height: 1.8em;
+	text-align: right;
+}
+.li_mini_gwc2 .s_mini_span{
+	margin-left: 10px;
+}
+.li_mini_gwc2 .s_em {
+	font-weight: bold;
+    color: #005aa9;
+    font-size: 1.18em;
+}
+.li_mini_gwc2 .mini_js{
+	display: inline-block;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    margin: 8px 0 0;
+    text-align: center;
+    font-size: 1.34em;
+    background: #005aa9;
+    color: #fff;
+}
+/***************这是水平分割线*****************/
+#gwc_msp{
+	overflow: hidden;
+    width: 100%;
+    background-color: #FFF;
+}
+#gwc_msp_div{
+	width: 1192px;
+    margin: 0 auto;
+    clear: both;
+    padding: 40px 0 20px;
+}
+.div_msp{
+	/*background-position: 220px -570px;*/
+    line-height: 2em;
+    margin: 0 0 40px;
+    padding: 10px 0 10px 330px;
+    width: 400px;
+}
+.div_msp a{
+	color: #0059AA;
+}	
+.div_msp_p{
+	font-size: 1.18em;
+    font-weight: 700;
+    padding: 0 0 10px;
+}
+
 /***************这是水平分割线*****************/
 #div_gwc{
 	width: 100%;

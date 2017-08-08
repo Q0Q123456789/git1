@@ -415,12 +415,8 @@
 	text-align: center;
 	line-height: 40px;
 }
-#nav_a .gwc #a:hover {
+#nav_a .gwc:hover #a {
 	background: url(../img/img2/base.png) 0px -450px;
-	color: #005AA9;
-}
-#div_mini_div:hover #a{
-	/*background: url(../img/img2/base.png) 0px -450px;*/
 	color: #005AA9;
 }
 #nav_a .span_span_a{

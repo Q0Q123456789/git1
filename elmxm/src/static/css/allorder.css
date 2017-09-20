@@ -1,0 +1,72 @@
+.all-order .header span{
+    float: left;
+    margin-left: 1rem;
+}
+.all-order .header a {
+    float: left;
+    margin-left: 1rem;
+    color: #fff;
+}
+.all-order .iconfont{
+    line-height: 4.2rem;
+    
+}
+.all{
+    font-size: 2rem;
+    color: #fff;
+    line-height: 4.2rem;
+
+}
+.order-list>a{
+    display: block;
+    width: 50%;
+    height: 3rem;
+    line-height: 3rem;
+    float: left;
+    box-sizing: border-box; 
+    text-align: center;
+    color: #666666;
+    background: #fff;
+}
+.order-list>a.active{
+    color: #2395ff;
+    border-bottom: .1rem solid #2395ff;
+}
+
+/* 外卖组件 */
+.sentfood-order{
+    padding: 1rem 1rem;
+    display: flex;
+    background: #fff;
+}
+.sentfood-order img{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.5rem;
+}
+.sentfood-order>div{
+    display: inline-block;
+    flex: 1;
+    font-size: 2rem;
+}
+.sentfood-order>div h2 span:nth-child(2){
+    float: right;
+    font-size: 2rem;
+}
+.sentfood-order>div p:nth-child(2){
+    color: #999999;
+    font-size: 1rem;
+}
+.sentfood-order>div p:nth-child(3){
+    margin-top: 0.8rem;
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+
+.show-order{
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    color: #999999;
+    text-align: center;
+}

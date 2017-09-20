@@ -1,0 +1,766 @@
+/*搜素页头部*/
+.header_{
+    height: 4.2rem;
+    background: #0096ff;
+    position: relative;
+}
+.return{
+    position: absolute; 
+    top:32%;
+    left:5%;
+    color: #fff;
+
+}
+.search_1{
+    width: 70%;
+    height: 3rem;
+    background: #fff;
+    border-radius: 5rem;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    border: 0 ;
+    margin-left: -35%;
+    margin-top: -1.5rem;
+    outline: none;
+    padding-left:10%;
+    
+}
+.search_2{
+    height: 3rem;
+    border: 0 ;
+    position: absolute;
+    right: 4%;
+    top:50%;
+    margin-top: -1.5rem;
+    background:#0096ff ;
+    color: #fff;
+    outline: none;
+}
+.img{
+    width: 1.5rem;
+    height:1.5rem;
+    position: absolute;
+    top:50%;
+    margin-top: -0.8rem;
+    left: 19%;
+    color: #000;
+    z-index: 9999;
+}
+/*******/
+
+/******/
+.his{
+    width: 100%;
+}
+.index_his{
+    height: 3rem;
+    background: #f5f5f5;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.index_his_p{
+    width: 50%;
+    line-height: 3rem;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #666;
+    float: left;
+}
+.index_his_a{
+    width: 50%;
+    line-height: 3rem;
+}
+.index_his_a>i{
+    float: right;
+    margin-right: 1rem;
+}
+.index_hist{
+    overflow: hidden;
+    background: #fff;
+}
+.index_hist_div{
+    overflow: hidden;
+    padding: 1rem;
+}
+.index_hist_span{
+    float: left;
+    margin: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+.hot{
+    margin-top: 1.5rem;
+}
+/*****/
+/****/
+.com_div{
+    width: 100%;
+    height: 3.5rem;
+    background: #fff;
+    display: none;
+    border-bottom: 1px solid #eee;
+}
+.filter-nav{
+    height: 3.5rem;
+    width: 33.333333%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    line-height: 3.5rem;
+}
+.active{
+    color: #3190e8;
+}
+.filter-nav.act::after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-top: 0.5rem solid #ccc;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0;
+    /*margin-left: .07rem;*/
+    box-sizing: border-box;
+    z-index: 9999;
+}
+.filter-nav.active::after{
+    content: '';
+	display: inline-block;			
+	width: 0px;
+	height: 0px;
+	/*border: 10px solid #000;*/
+	border-top: 0px;
+	border-bottom: .5rem solid #3190e8;
+	/*border-top: 10px solid #000;*/
+	border-left: .5rem solid transparent;
+	border-right: .5rem solid transparent;
+}
+/*******/
+/****/
+.index_list{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+.index_list>li{
+    width: 100%;
+}
+.logo{
+   padding: 0.8rem;
+}
+.logg_div{
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #eee;
+}
+.logg_div>img{
+    width: 100%;
+    height: 100%;
+}
+.index-main{
+    flex: 1;
+    padding: 0.8rem 0.4rem 0.8rem 0;
+}
+.index_h3{
+    max-width: 10rem;
+    display: flex;
+    font-size: 2rem;
+}
+.index_h3 span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.index_section_2{
+    display: flex;
+    margin-top: 0.5rem;
+}
+.div_icon{
+    width: 4.5rem;
+}
+.div_icon>i{
+    color: #ffaa0c;
+}
+.span_{
+    font-size: 2rem;
+    color: #ffaa0c;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    font-family:' 微软雅黑';
+}
+.index_money span{
+    color: #999;  
+}
+.index_money span+span::before{
+    margin: 0 .08rem;
+    color: #ddd;
+    content: "|";
+}
+.index_section_3{
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+}
+.index_mi span{
+    color: #999; 
+}
+.index_mi span+span::before{
+    margin: 0 .08rem;
+    color: #ddd;
+    content: "|";
+}
+.index-div{
+    margin-top: 0.5rem;
+    border-bottom: 1px dashed #999;
+}
+.index_section_4{
+    margin-top: 0.5rem;
+    color: #999;
+}
+.index_section_4 .div_2{
+    margin-top: 0.5rem;
+}
+
+/* 收藏 */
+.header_collect{
+  width: 100%;
+  height: 4.2rem;
+  background:#0096ff ;
+}
+.header_collect>span{
+  width: 100%;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+.header_collect>a>i{
+  font-size: 4rem;
+  line-height: 4.2rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.zslssc{
+  float: right;
+}
+
+/*******************************************************************************************/
+/********************************************************************************************/
+
+html,body,#root,.App,#login-main,#set-main,#account-main,#username-main,#service-main{
+    height: 100%
+  }
+
+  
+  
+
+  /*曹黎明 用户中心部分 My*/
+  .header{
+   
+    position: relative;
+    overflow: hidden; 
+    background:#0096ff;
+    width: 100%;
+  }
+  .header.min{
+    height: 10rem;
+  }
+  .hea{
+    height: 4rem;
+    width: 100%
+  }
+  .hea span{
+    float: left;
+    padding-left: 2rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: white; 
+    overflow: hidden;
+  }
+  .hea i{
+    font-size: 3rem;
+    margin-right: 1rem;
+    height: 2rem;
+    color: white;
+    line-height: 4rem;
+    float: right;
+  }
+  .cont{
+    height:6rem;
+    display: block;
+
+  }
+  .cont>img{
+    width: 5.5rem;
+    height: 5rem;
+    margin-left: 2rem;
+    float: left;
+  }
+  .cent{
+    margin-left: 1rem;
+    float: left
+  }
+  .cent p{
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    color: white;
+  }
+  .cent span{
+    font-size: 2rem;
+    color: white;
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+  .cont strong{
+    float: right;
+    margin-right: 1rem;
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .youhui{
+    height: 7.5rem;
+    border-bottom: .1rem solid #f5f5f5;
+    background: #fff;
+  }
+  .youhui li{
+    font-size: 1.5rem;
+    text-align: center;
+    width:33.3%;
+    height: 100%;
+    display: inline-block;
+    border-right:.01rem solid #dddddd;
+    border-bottom: .01rem solid #dddddd;
+    box-sizing: border-box;
+  }
+  .youhui>li>i{
+    display: inline-block;
+    font-size: 3rem;
+    margin-top: 2rem;
+    
+  }
+  .youhui li:nth-of-type(3){
+      border-right: 0;
+  }
+  .youhui>li:first-of-type>i{
+    color:orange;
+  }
+  .youhui>li:nth-last-of-type(2)>i{
+    color:red;
+  }
+  .youhui>li:nth-last-of-type(1)>i{
+    color:green;
+  }
+  .ccent1,ccent2{
+    box-sizing: content-box;
+    height: 7rem;
+    width: 100%;
+    border-bottom: .1rem solid #f5f5f5;
+    margin-top: 1rem;
+    background: #fff;
+  
+  }
+  .ccent1 li,.ccent2 li{
+    height: 3.5rem;
+    line-height:3.5rem;
+    font-size: 2rem;
+    color:black;
+    border-bottom: .01rem solid #dddddd;
+    background: #fff;
+  }
+  .ccent1 li>i,.ccent2 li>i{
+    margin: 1rem;
+    font-size:2.5rem;
+  }
+  .ccent1 li>a>i{
+    margin: 1rem;
+    font-size:2.5rem;
+  }
+  .blue{
+    color:#4aa5f0;
+  }
+  .red{
+    color: red;
+  }
+  .green{
+    color:greenyellow;
+  }
+  .yellow{
+    color: gold;
+  }
+  .ccent2{
+    height: 7rem;
+    background: #fff;
+    margin-top: 1rem;
+  }
+  /*曹黎明 登录 Login*/
+  .login-head{
+    border-bottom: .1rem solid #f5f5f5;
+    color: white;
+    height: 4.2rem;
+    box-sizing: content-box;
+    width: 100%;
+    background: #4aa5f0;
+  }
+  .login-head a{
+    color: white;
+    margin-top: 1.2rem;
+    font-size: 3rem;
+    margin-left: 2rem;
+    float: left;
+  }
+  .login-head span{
+    float: left;
+    font-size: 3rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    margin-left: 1rem;
+  }
+  #passlogin{
+    font-size: 3rem;
+    float: right;
+    margin-right: 1rem;
+    height:4.2rem;
+    font-weight: 500;
+  }
+  .login{
+    box-sizing: content-box;
+    height: 8rem;
+    width: 100%;
+    border-bottom: .1rem solid #f5f5f5;
+    margin-top: 1.3rem;
+    background: #fff;
+  }
+  .login>li{
+    position: relative;
+    height: 4rem;
+    border-bottom: 1px solid #eee;
+    padding-left: 1rem;
+    
+  }
+  .login>li>input{
+
+    border: none;
+    border-bottom: .01rem solid #f5f5f5;
+    height: 4rem;
+    width: 100%;
+    outline: none;
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+  .proving{
+    padding: 0.3rem 0.8rem;
+    position: absolute;
+    right: 1rem;
+    height: 3rem;
+    top: 0.5rem;
+    background: #eee;
+    border-radius: 0.5rem;
+    line-height:2.5rem;
+  }
+  #login-main{
+    position: relative;
+    background: #f5f5f5;
+
+  }
+  .login-bottom p{
+  font-size: .16rem;
+   color: #666666;
+   width:93%;
+   margin: 0 auto
+  }
+  .login-bottom{
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;
+  }
+  .user-login{
+    height: 4rem;
+    width: 93%;
+    margin: 0.1rem auto;
+    background: #4dc060;
+    border-radius: .05rem;
+    color:white;
+    text-align: center;
+    line-height: 4rem;
+    font-size:3rem ;
+    margin-top: 1rem;
+  }
+  #copy{
+    width: 80%;
+    position: absolute;
+    bottom: 6rem;
+    left: 3rem;
+  }
+  /*曹黎明 设置密码 SetLogin*/
+  #newpass{
+    padding-left: 1rem;
+    border: none;
+    border-bottom: .01rem solid #f5f5f5;
+    height: 4rem;
+    width:96.5%;
+    outline: none;
+    line-height: 4rem;
+    font-size: 2.2rem; 
+  }
+  .login-bottom1 p{
+    font-size: 2.2rem;
+    color: #666666;
+    width: 94%;
+    margin: 0.1rem auto;
+    }
+    /*曹黎明 设置 UserCenter*/
+  #set-main{
+    background: #f5f5f5;
+  }
+  .set-accounts{
+
+    height: 8rem;
+    background: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+  }
+  .set-accounts li{
+    height: 4rem;
+    border-bottom: .01rem solid #ccc;
+    line-height: 4rem;
+    padding: 0 1rem;
+  }
+  .set-accounts span{
+    float: right;
+    margin-right:.2rem; 
+    font-size:.12rem;
+    color:#999;
+  }
+  .elm-about{
+    margin-top: 1rem;
+    padding-left: .1rem;
+    margin-bottom: .1rem;
+    height: 4rem;
+    font-size: .16rem;
+    background: white;
+    line-height: 4rem;
+    padding: 0 0 0 1rem;
+  }
+  .set-bottom{
+    margin-top: 1rem;
+    background: white;
+    height:4rem;
+    text-align: center;
+    color:red;
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  /*曹黎明 用户与安全 Account*/
+  #account-main{
+    background: #f5f5f5;
+  }
+  .head-photo{
+    border-radius: 50%;
+    float: right;
+    height: 85%;
+    margin: .4rem .5rem;
+  }
+  #account-main ul{
+    height: 9rem;
+    background: white;
+    margin-bottom:.1rem;
+    font-size:2rem; 
+    margin-top: 1rem; 
+    font-weight: 600;  
+  }
+  #account-main li,#account-main dt,#account-main dd{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    border-bottom: .01rem solid #d2d2d2;
+    padding-left: .1rem;
+    padding-left: 1rem;
+  }
+  #account-main li i,#account-main dd i{
+
+   margin-right: .1rem
+  }
+  #account-main li span{
+    float: right;
+    color:#999;
+    font-size: .14rem;
+    margin-right: .1rem;
+  }
+  #account-main dl{
+    font-size: .16rem;
+    background: white;
+    margin-bottom:.1rem; 
+  }
+  .account-set{
+    height:27.5rem;
+    margin-top: 1rem;
+    
+  }
+  #account-main strong{
+    float: right;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  .security-set{
+    height:20rem;
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+  }
+  #account-main dt{
+    font-size:.14rem;
+    color: #999; 
+  }
+  #account-main dd span{
+    float: right;
+    font-size: .16rem;
+    color:#4aa5f0;
+    margin-right: 1rem;
+  }
+  /*曹黎明 用户名 Username*/
+  #username-main{
+    background:#f5f5f5;
+  }
+  #username-main input{
+    width: 100%;
+    height: 4rem;
+    background: white;
+    line-height: 4rem;
+    padding-left:1rem;
+    border: none;
+    font-size: 2rem;
+  }
+  #username-main p{
+    margin: 1rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  .account-bottom{
+    margin-top:1rem; 
+    height: 4rem;
+    width: 96%;
+    font-size: 2rem;
+    border-radius: .02rem;
+    background: #888;
+    color: white;
+    line-height: 4rem;
+    text-align: center;
+    margin: 0 auto; 
+  }
+  .account-bottom-active{
+    background: #4dc060;
+  }
+  /*曹黎明 服务中心 Service*/
+  .service-call{
+    height: 1rem;
+    width: 100%;
+    background: white;
+  }
+  .service-call li{
+    font-size: .15rem;
+    display: inline-block;
+    text-align: center;
+    height: 1rem;
+    width: 50%;
+  }
+  .service-call li i{
+    display: inline-block;
+    width: 100%;
+    font-size: .3rem;
+    margin-top: .3rem;
+  }
+  
+  .service-call li:first-of-type{
+    border-right: .01rem solid #eaeaea;
+  }
+  .service-call li:first-of-type i{
+    color:#ff7b52;
+  }
+  .service-call li:last-of-type i{
+    color:#4dc060;
+  }
+  .hot-promble{
+    width: 100%;
+  }
+
+
+/****/
+  .service-call{
+    height: 8rem;
+    width: 100%;
+    background: white;
+  }
+  .service-call li{
+    font-size: 2rem;
+    display: inline-block;
+    text-align: center;
+    height:6rem;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .service-call li i{
+    display: inline-block;
+    width: 100%;
+    font-size: 4rem;
+    margin-top: 1.5rem;
+  }
+  
+  .service-call li:first-of-type{
+    border-right: .01rem solid #eaeaea;
+  }
+  .service-call li:first-of-type i{
+    color:#ff7b52;
+  }
+  .service-call li:last-of-type i{
+    color:#4dc060;
+  }
+  .hot-promble{
+    width: 100%;
+  }
+  .hot-promble dt,.hot-promble dd{
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-bottom: .01rem solid #d2d2d2;
+    padding-left: 1rem;
+    background: #fff;
+  }
+  .hot-promble dt{
+    font-size: .18rem;
+    font-weight:700;
+  }
+  .hot-promble dd{
+    font-size: 2rem
+    color：#eaeaea;
+  }
+  .hot-promble i{
+    float: right;
+    margin-right: 1rem;
+  }
+  /*曹黎明 热门问题 Problem*/
+  .markdown {
+    color: #666;
+    font-size: .346667rem;
+    padding: 1rem;
+  }
+  .markdown h3{
+    margin-top: .666667rem;
+    margin-bottom: .2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  .markdown p {
+    margin: .7rem ;
+    line-height: 1.4;
+  }
+  .markdown ul {
+    list-style: disc;
+    margin-left: 2em;
+  }

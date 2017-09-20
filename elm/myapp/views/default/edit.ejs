@@ -1,0 +1,56 @@
+<%- include ../public/header.ejs%>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+
+            <%- include ../public/aside.ejs%>
+
+
+        </div>
+        <div class="col-sm-10">
+            <ol class="breadcrumb">
+                <li class="active">管理员管理
+                </li>
+                <li class="active">管理员列表列表
+                </li>
+            </ol>
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    增加管理员
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive input-form">
+                        <form action="/admin/doEdit" method="post"  enctype="multipart/form-data" >
+                            <ul>
+                                <input type="hidden" value="<%=list._id%>" name="id"/>
+                                <li> 管理员名字：<input type="text" name="login_id" value="<%=list.login_id%>"/></li> <br>
+                                <li> 管理员账户：<input type="username" name="username"  value="<%=list.username%>" readonly  unselectable="on"  / ></li> <br>
+                                <li> 密　　　码：<input type="password" name="password" value="<%=list.password%> " / ></li> <br>
+                                <li> 管理员头像：<input type="file" name="img" style="display: inline-block" /></li>
+                                <img src="/<%=list.img%>" alt="" style="width: 50px;height: 50px;"> <br><br>
+                                <li> 身　　　份：<input type="text" name="status" value="<%=list.status%> " /></li> <br>
+                                <li> 登陆　时间：<input type="text" name="last_login_time" value="<%=list.last_login_time%> " /></li> <br>
+                                <li> 注册　时间：<input type="datetime-local" value="<%=list.add_time%>" name="add_time" readonly  unselectable="on" /></li> <br>
+                                <li>
+                                    <br/>
+                                    <button type="submit" class="btn btn-default">提交</button>
+                                </li>
+
+                            </ul>
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

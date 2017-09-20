@@ -1,0 +1,129 @@
+<%- include ../../public/header.ejs%>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+
+                <%- include ../../public/aside.ejs%>
+
+            </div>
+            <div class="col-sm-10">
+                <ol class="breadcrumb">
+                    <li class="active">用户管理
+                    </li>
+                    <li class="active">用户列表
+                    </li>
+                </ol>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        搜索
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" class="form-inline">
+                            <div class="form-group">
+                                <label for="name">名称</label>
+                                <input type="text" class="form-control" id="name" placeholder="请输入名称">
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default">开始搜索</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--
+                列表展示
+            -->
+                <div class="table-responsive">
+                    <table class="table table-striped ">
+                        <thead>
+                            <tr>
+                                <th class="text-center">编号</th>
+                                <th class="text-center">账号</th>
+                                <th class="text-center">电话</th>
+                                <th class="text-center">地址</th>
+                                <th class="text-center">邮件</th>
+                                <th class="text-center">状态</th>
+                                <th class="text-center">添加时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <%for(var i=0;i<list.length;i++){ %>
+                                <tr class="text-center">
+                                    <td>
+                                        <%=i+1%>
+                                    </td>
+                                    <td>
+                                        <%=list[i].username%>
+                                    </td>
+                                    <td>
+                                        <%=list[i].password%>
+                                    </td>
+                                    <td>
+                                        <%=list[i].address%>
+                                    </td>
+                                    <td>
+                                        <%=list[i].email%>
+                                    </td>
+                                    <td>
+                                        <%=list[i].status%>
+                                    </td>
+                                    <td>
+                                        <%=list[i].addtime%>
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <a href="/admin/user/edit?id=<%=list[i]._id%>" class="btn btn-success">修改</a>
+                                        <a href="/admin/user/yhdelete?id=<%=list[i]._id%>" class="btn btn-danger">删除</a>
+
+                                    </td>
+                                </tr>
+
+                                <%}%>
+
+                        </tbody>
+                    </table>
+                        <div id="pagination" class="pagination">
+
+                        </div>
+
+            </div>
+        </div>
+    </div>
+        <script>
+
+
+
+            $(function(){
+//        http://jqpaginator.keenwon.com/
+
+                $('#pagination').jqPaginator({
+                    totalPages: <%=totalPages%>,   /*总页数*/
+                    visiblePages: 10,
+                    currentPage:<%=page%>,   /*当前的页数*/
+                    first: '<li class="first"><a href="javascript:void(0);">首页<\/a><\/li>',
+                    prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i>上一页<\/a><\/li>',
+                    next: '<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"><\/i><\/a><\/li>',
+                    last: '<li class="last"><a href="javascript:void(0);">末页<\/a><\/li>',
+                    page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+                    onPageChange: function (num, type) {
+//                        $('#text').html('当前第' + num + '页');
+
+                        console.log(num);
+
+//                        location.href='/admin/user?page='+num;
+
+                        if(num!=<%=page%>){   /*注意 死循环*/
+                            location.href='/admin/order?page='+num;
+                        }
+                    }
+                });
+            })
+
+
+        </script>
+    </body>
+
+    </html>
